@@ -41,7 +41,7 @@
             height: -webkit-fill-available;
             max-height: 100vh;
             overflow-x: auto;
-            overflow-y: hidden;
+            overflow-y: auto;
         }
 
         .b-example-divider {
@@ -306,16 +306,24 @@
                     <div class="card mb-4 rounded-3 shadow-sm">
                         <div class="card-body">
                             <h3 class="card-title"><center><p>FAQ</p></center></h3>
+                            <div class="container text-center">
+                              <div class="row">
+                                <div class="col">
                             <p class="d-inline-flex gap-1">
                               <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample">
                                 Как купить?
                               </a>
+                                </div>
+                                   <div class="col">
                               <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
                                 Как доставить?
                               </button>
+                                   </div>
+                                   <div class="col">
                               <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample">
                                 Какая гарантия?
                               </button>
+                                   </div>
                             </p>
                             <div class="collapse" id="collapseExample1">
                               <div class="card card-body">
@@ -332,6 +340,54 @@
                                 30 дней
                               </div>
                             </div>
+                        </div>
+                        <div class="col-12">
+                            <table class="table table-striped-columns">
+                                <thead>
+                                    <tr>
+                                      <th scope="col">#</th>
+                                      <th scope="col">Название товара</th>
+                                      <th scope="col">Цена за штуку</th>
+                                      <th scope="col">Количество</th>
+                                      <th scope="col">Итоговая сумма</th>
+                                      <th scope="col">Статус заказа</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <th scope="row">1</th>
+                                      <td>Компьютер</td>
+                                      <td>50000</td>
+                                      <td>10</td>
+                                      <td>500000</td>
+                                      <td class="table-info">Новый</td>
+                                    </tr>
+                                    <tr>
+                                      <th scope="row">2</th>
+                                      <td>Зарядка</td>
+                                      <td>1000</td>
+                                      <td>22</td>
+                                      <td>22000</td>
+                                      <td class="table-warning">Обработка</td>
+                                    </tr>
+                                    <tr>
+                                      <th scope="row">3</th>
+                                      <td>Наушники</td>
+                                      <td>3000</td>
+                                      <td>20</td>
+                                      <td>60000</td>
+                                      <td class="table-success">>Обработан</td>
+                                    </tr>
+                                    <tr>
+                                      <th scope="row">4</th>
+                                      <td>Чехол</td>
+                                      <td>100</td>
+                                      <td>1000</td>
+                                      <td>100000</td>
+                                      <td class="table-danger">>Отмена</td>
+                                    </tr>
+                                  </tbody>
+                            </table>>
                         </div>
                     </div>
                 </div>
